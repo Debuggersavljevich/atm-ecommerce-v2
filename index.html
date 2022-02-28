@@ -11,12 +11,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="/assets/css/styles.css">
 
-        <title>Responsive watches website - Bedimcode</title>
+        <title>ATM - Tienda Online</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -28,16 +28,16 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__links">Home</a>
+                            <a href="#home" class="nav__links active-link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#featured" class="nav__links">Destacados</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#shop" class="nav__links">Shop</a>
+                            <a href="#products" class="nav__links">Shop Mates</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contacto" class="nav__links">Contacto</a>
+                            <a href="#new" class="nav__links">Shop Yerbas</a>
                         </li>
                     </ul>
 
@@ -63,6 +63,100 @@
 
         <!--==================== CART ====================-->
         <div class="cart" id="cart">
+
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart_title-center">Carrito de Compras</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/assets/img/mate-home.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__detail">
+                        <h3 class="cart__title">$nombreProducto</h3>
+                        <span class="cart__price">$precio</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus'></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash cart__amount-trash' id="cart-close"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/assets/img/mate-home.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__detail">
+                        <h3 class="cart__title">$nombreProducto</h3>
+                        <span class="cart__price">$precio</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus'></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash cart__amount-trash' id="cart-close"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="/assets/img/mate-home.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__detail">
+                        <h3 class="cart__title">$nombreProducto</h3>
+                        <span class="cart__price">$precio</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus'></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash cart__amount-trash' id="cart-close"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 Items</span>
+                <span class="cart__prices-total">$precio</span>
+                
+            </div>
         </div>
 
         <main class="main">
@@ -148,22 +242,249 @@
 
             <!--==================== STORY ====================-->
             <section class="story section container">
-                
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            ¿Quiénes somos?
+                        </h2>
+
+                        <h1 class="story__title">
+                            Somos la razón de tus mates
+                        </h1>
+
+                        <p class="story__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, tempore!</p>
+                    
+                        <a href="#" class="button button--small">Contactanos</a>
+                    
+
+                        <div class="story__images">
+                            <img src="/assets/img/nosotros.jpg" alt="" class="story__img">
+                            <div class="story__square"></div>
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
             <!--==================== PRODUCTS ====================-->
             <section class="products section container" id="products">
-                
+                <h2 class="section__title">
+                    Tienda
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="/assets/img/mate-home.png" alt="" class="products__img">
+
+                        <h3 class="products__title">$nombreProducto</h3>
+                        <span class="products__price">$precio</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-cart'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="/assets/img/mate-home.png" alt="" class="products__img">
+
+                        <h3 class="products__title">$nombreProducto</h3>
+                        <span class="products__price">$precio</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-cart'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="/assets/img/mate-home.png" alt="" class="products__img">
+
+                        <h3 class="products__title">$nombreProducto</h3>
+                        <span class="products__price">$precio</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-cart'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="/assets/img/mate-home.png" alt="" class="products__img">
+
+                        <h3 class="products__title">$nombreProducto</h3>
+                        <span class="products__price">$precio</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-cart'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="/assets/img/mate-home.png" alt="" class="products__img">
+
+                        <h3 class="products__title">$nombreProducto</h3>
+                        <span class="products__price">$precio</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-cart'></i>
+                        </button>
+                    </article>
+                </div>
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <h2 class="section__title">
+                        Ellos confiaron
+                    </h2>
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left'></i>
+                                </div>
+
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, labore?
+                                </p>
+                                <h3 class="testimonial__date">Kit de Mate</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="/assets/img/lole-testimonial.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__data">
+                                        <span class="testimonial__perfil-name">Lorenzo</span>
+                                        <span class="testimonial__perfil-detail">Armó su kit</span>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class='bx bx-left-arrow-alt'></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left'></i>
+                                </div>
+
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, labore?
+                                </p>
+                                <h3 class="testimonial__date">Mate y Termo</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="/assets/img/lole-testimonial.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__data">
+                                        <span class="testimonial__perfil-name">Roberto</span>
+                                        <span class="testimonial__perfil-detail">Armó su kit </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class='bx bx-left-arrow-alt'></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class='bx bx-left-arrow-alt'></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left'></i>
+                                </div>
+
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, labore?
+                                </p>
+                                <h3 class="testimonial__date">Bombilla y Yerba</h3>
+
+                                <div class="testimonial__perfil">
+                                    <img src="/assets/img/lole-testimonial.jpg" alt="" class="testimonial__perfil-img">
+
+                                    <div class="testimonial__data">
+                                        <span class="testimonial__perfil-name">Carlos</span>
+                                        <span class="testimonial__perfil-detail">Armó su kit </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class='bx bx-left-arrow-alt'></i>
+                                </div>
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                    
                 
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="/assets/img/mate-testimonial.jpg" alt="" class="testimonial__img">
+                    </div>
+                </div>
             </section>
 
             <!--==================== NEW ====================-->
             <section class="new section container" id="new">
-               
+               <h2 class="section__title">Yerbas</h2>
+               <div class="new__container">
+                   <div class="swiper new-swiper">
+                       <div class="swiper-wrapper">
+                           <article class="new__card swiper-slide">
+                               <span class="new__tag">Premium</span>
+
+                               <img src="/assets/img/yerba-producto.PNG" alt="" class="new__img">
+                                <div class="new__data">
+                                    <h3 class="new__title">$nombreProducto</h3>
+                                    <span class="new__price">$precio</span>
+                                </div>
+
+                                <button class="button new__button">AGREGAR AL CARRITO</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Premium</span>
+ 
+                                <img src="/assets/img/yerba-producto.PNG" alt="" class="new__img">
+                                 <div class="new__data">
+                                     <h3 class="new__title">$nombreProducto</h3>
+                                     <span class="new__price">$precio</span>
+                                 </div>
+ 
+                                 <button class="button new__button">AGREGAR AL CARRITO</button>
+                             </article>
+
+                             <article class="new__card swiper-slide">
+                                <span class="new__tag">Premium</span>
+ 
+                                <img src="/assets/img/yerba-producto.PNG" alt="" class="new__img">
+                                 <div class="new__data">
+                                     <h3 class="new__title">$nombreProducto</h3>
+                                     <span class="new__price">$precio</span>
+                                 </div>
+ 
+                                 <button class="button new__button">AGREGAR AL CARRITO</button>
+                             </article>
+
+                             <article class="new__card swiper-slide">
+                                <span class="new__tag">Premium</span>
+ 
+                                <img src="/assets/img/yerba-producto.PNG" alt="" class="new__img">
+                                 <div class="new__data">
+                                     <h3 class="new__title">$nombreProducto</h3>
+                                     <span class="new__price">$precio</span>
+                                 </div>
+ 
+                                 <button class="button new__button">AGREGAR AL CARRITO</button>
+                             </article>
+
+                             
+                       </div>
+                   </div>
+               </div>
             </section>
 
             <!--==================== NEWSLETTER ====================-->
@@ -174,13 +495,63 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Nosotros</h3>
+
+                    <ul class="footer__list">
+                        <li>Junín - Buenos Aires</li>
+                        <li>Chacabuco - Buenos Aires</li>
+                        <li>2364-123456</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">A Todo Mate</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="link__footer">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link__footer">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link__footer">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Nuestras Redes</h3>
+
+                    <ul class="footer__social">
+                        <a target="_blank" href="#" class="footer__social-link">
+                            <i target class='bx bxl-instagram'></i>
+                        </a>
+
+                        <a target="_blank" href="#" class="footer__social-link">
+                            <i  class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a target="_blank" href="#" class="footer__social-link">
+                            <i  class='bx bxl-linkedin'></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; Schrodinger Studio - Todos los derechos reservados</span>
         </footer>
 
         <!--=============== SCROLL UP ===============-->
         
+        <a href="#" class="scrollup" id="scroll-up">
+            <i  class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="/assets/js/main.js"></script>
